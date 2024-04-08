@@ -1,0 +1,1 @@
+{'dataset_root': './food11/', 'save_dir': '/content/drive/MyDrive/', 'exp_name': 'medium_baseline_q', 'batch_size': 64, 'lr': 0.0005, 'seed': 20220013, 'loss_fn_type': 'KD', 'weight_decay': 1e-05, 'grad_norm_max': 10, 'n_epochs': 10, 'patience': 5, 'quantization': True}

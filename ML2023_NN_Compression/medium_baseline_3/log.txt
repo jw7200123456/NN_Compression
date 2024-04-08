@@ -1,0 +1,39 @@
+{'dataset_root': './food11/', 'save_dir': '/content/drive/MyDrive/', 'exp_name': 'medium_baseline_3', 'batch_size': 64, 'lr': 0.0005, 'seed': 20220013, 'loss_fn_type': 'KD', 'weight_decay': 1e-05, 'grad_norm_max': 10, 'n_epochs': 5, 'patience': 5}
+device: cuda
+[ Train | 001/005 ] loss = 0.84827, acc = 0.67119
+[ Valid | 001/005 ] loss = 0.90630, acc = 0.66035 -> best
+[ Train | 002/005 ] loss = 0.84031, acc = 0.67312
+[ Valid | 002/005 ] loss = 1.05909, acc = 0.62653 -> best
+[ Train | 003/005 ] loss = 0.84161, acc = 0.67271
+[ Valid | 003/005 ] loss = 1.06007, acc = 0.62449 -> best
+[ Train | 004/005 ] loss = 0.83062, acc = 0.67555
+[ Valid | 004/005 ] loss = 0.89232, acc = 0.66268 -> best
+[ Train | 005/005 ] loss = 0.83453, acc = 0.67697
+[ Valid | 005/005 ] loss = 0.91192, acc = 0.66647 -> best
+Finish training
+[ Train | 001/005 ] loss = 0.84862, acc = 0.66248
+[ Valid | 001/005 ] loss = 0.81537, acc = 0.68950 -> best
+Best model found at epoch 1, saving model
+[ Train | 002/005 ] loss = 0.85688, acc = 0.66400
+[ Valid | 002/005 ] loss = 0.81628, acc = 0.69534 -> best
+Best model found at epoch 2, saving model
+[ Train | 003/005 ] loss = 0.84444, acc = 0.67008
+[ Valid | 003/005 ] loss = 0.99909, acc = 0.65015
+[ Train | 004/005 ] loss = 0.84323, acc = 0.66836
+[ Valid | 004/005 ] loss = 0.82038, acc = 0.69300
+[ Train | 005/005 ] loss = 0.83119, acc = 0.66907
+[ Valid | 005/005 ] loss = 0.85628, acc = 0.66968
+Finish training
+[ Train | 001/005 ] loss = 0.84256, acc = 0.66663
+[ Valid | 001/005 ] loss = 0.89025, acc = 0.67318 -> best
+[ Train | 002/005 ] loss = 0.83949, acc = 0.67282
+[ Valid | 002/005 ] loss = 0.82805, acc = 0.68776 -> best
+Best model found at epoch 2, saving model
+[ Train | 003/005 ] loss = 0.83378, acc = 0.67231
+[ Valid | 003/005 ] loss = 0.78751, acc = 0.70350 -> best
+Best model found at epoch 3, saving model
+[ Train | 004/005 ] loss = 0.82764, acc = 0.67717
+[ Valid | 004/005 ] loss = 0.90453, acc = 0.67259
+[ Train | 005/005 ] loss = 0.83649, acc = 0.67393
+[ Valid | 005/005 ] loss = 0.92745, acc = 0.65948
+Finish training

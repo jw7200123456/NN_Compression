@@ -1,0 +1,23 @@
+{'dataset_root': './food11/', 'save_dir': './', 'exp_name': 'simple_baseline', 'batch_size': 64, 'lr': 0.0003, 'seed': 20220013, 'loss_fn_type': 'CE', 'weight_decay': 1e-05, 'grad_norm_max': 10, 'n_epochs': 10, 'patience': 300}
+device: cuda
+[ Train | 001/010 ] loss = 2.18693, acc = 0.22907
+[ Valid | 001/010 ] loss = 2.03568, acc = 0.29300 -> best
+Best model found at epoch 1, saving model
+device: cuda
+device: cuda
+[ Train | 001/010 ] loss = 2.06453, acc = 0.27346
+[ Valid | 001/010 ] loss = 1.93264, acc = 0.33090 -> best
+Best model found at epoch 1, saving model
+[ Train | 002/010 ] loss = 2.01903, acc = 0.29363
+[ Valid | 002/010 ] loss = 1.89991, acc = 0.34402 -> best
+Best model found at epoch 2, saving model
+[ Train | 003/010 ] loss = 1.99184, acc = 0.30610
+[ Valid | 003/010 ] loss = 1.87639, acc = 0.35627 -> best
+Best model found at epoch 3, saving model
+[ Train | 004/010 ] loss = 1.97105, acc = 0.31310
+[ Valid | 004/010 ] loss = 1.89034, acc = 0.35044
+[ Train | 005/010 ] loss = 1.94817, acc = 0.32090
+[ Valid | 005/010 ] loss = 1.92717, acc = 0.34402
+[ Train | 006/010 ] loss = 1.91770, acc = 0.33296
+[ Valid | 006/010 ] loss = 1.84335, acc = 0.36910 -> best
+Best model found at epoch 6, saving model
