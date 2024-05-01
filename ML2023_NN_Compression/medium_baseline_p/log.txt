@@ -1,0 +1,140 @@
+{'dataset_root': './food11/', 'save_dir': '/content/drive/MyDrive/', 'exp_name': 'medium_baseline_p', 'batch_size': 64, 'lr': 0.0005, 'lr_step_size': 10, 'lr_gamma': 0.5, 'seed': 20220013, 'loss_fn_type': 'KD', 'weight_decay': 1e-05, 'grad_norm_max': 10, 'n_epochs': 20, 'patience': 15, 'quantization': False, 'prune': True, 'prune_times': 5, 'prune_epoch': 6, 'prune_ratio': 0.1, 'pretrain': False, 'pretrain_path': '/content/drive/MyDrive/medium_baseline_p/student_best_prune.ckpt', 'pretrain_accuracy': None}
+n_epochs: 10, patience:15, device: cuda, loss_fn_type: KD
+optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0003
+    lr: 0.0003
+    maximize: False
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.StepLR object at 0x79cbc4e2f3a0>
+n_epochs: 10, patience:15, device: cuda, loss_fn_type: KD
+optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0003
+    lr: 0.0003
+    maximize: False
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.StepLR object at 0x79cac01c3670>
+[ Train | 001/010 ] loss = 0.98074, acc = 0.63095
+[ Valid | 001/010 ] loss = 0.91484, acc = 0.64840
+[ Train | 002/010 ] loss = 0.89606, acc = 0.66004
+[ Valid | 002/010 ] loss = 0.89741, acc = 0.66006
+[ Train | 003/010 ] loss = 0.87212, acc = 0.65660
+[ Valid | 003/010 ] loss = 0.88636, acc = 0.67609 -> best
+Best model found at epoch 3, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune.ckpt
+[ Train | 004/010 ] loss = 0.85259, acc = 0.66957
+[ Valid | 004/010 ] loss = 0.87094, acc = 0.67318
+[ Train | 005/010 ] loss = 0.83587, acc = 0.67059
+[ Valid | 005/010 ] loss = 0.83425, acc = 0.68134 -> best
+Best model found at epoch 5, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune.ckpt
+[ Train | 006/010 ] loss = 0.80156, acc = 0.68792
+[ Valid | 006/010 ] loss = 0.81090, acc = 0.68746 -> best
+Best model found at epoch 6, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune.ckpt
+[ Train | 007/010 ] loss = 0.78660, acc = 0.69724
+[ Valid | 007/010 ] loss = 0.79807, acc = 0.69155 -> best
+Best model found at epoch 7, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune.ckpt
+[ Train | 008/010 ] loss = 0.77903, acc = 0.69663
+[ Valid | 008/010 ] loss = 0.81052, acc = 0.69125
+[ Train | 009/010 ] loss = 0.77776, acc = 0.69917
+[ Valid | 009/010 ] loss = 0.76559, acc = 0.70379 -> best
+Best model found at epoch 9, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune.ckpt
+[ Train | 010/010 ] loss = 0.77718, acc = 0.69329
+[ Valid | 010/010 ] loss = 0.85116, acc = 0.68076
+Finish training
+n_epochs: 10, patience:15, device: cuda, loss_fn_type: KD
+n_epochs: 10, patience:15, device: cuda, loss_fn_type: KD
+optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0003
+    lr: 0.0003
+    maximize: False
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.StepLR object at 0x79cbc5a84a90>
+[ Train | 001/010 ] loss = 0.80172, acc = 0.68690
+[ Valid | 001/010 ] loss = 0.84304, acc = 0.69271 -> best
+Best model found at epoch 1, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune_quant.ckpt
+[ Train | 002/010 ] loss = 0.80268, acc = 0.68630
+[ Valid | 002/010 ] loss = 0.84680, acc = 0.68163
+[ Train | 003/010 ] loss = 0.79506, acc = 0.68366
+[ Valid | 003/010 ] loss = 0.88084, acc = 0.67085
+[ Train | 004/010 ] loss = 0.79779, acc = 0.68792
+[ Valid | 004/010 ] loss = 0.80493, acc = 0.69038
+[ Train | 005/010 ] loss = 0.77180, acc = 0.69471
+[ Valid | 005/010 ] loss = 0.77307, acc = 0.70904 -> best
+Best model found at epoch 5, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune_quant.ckpt
+[ Train | 006/010 ] loss = 0.73907, acc = 0.70586
+[ Valid | 006/010 ] loss = 0.76199, acc = 0.71516 -> best
+Best model found at epoch 6, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune_quant.ckpt
+[ Train | 007/010 ] loss = 0.73989, acc = 0.70799
+[ Valid | 007/010 ] loss = 0.79929, acc = 0.69913
+[ Train | 008/010 ] loss = 0.73826, acc = 0.71113
+[ Valid | 008/010 ] loss = 0.76411, acc = 0.71808 -> best
+Best model found at epoch 8, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune_quant.ckpt
+[ Train | 009/010 ] loss = 0.73033, acc = 0.71164
+[ Valid | 009/010 ] loss = 0.80501, acc = 0.70292
+[ Train | 010/010 ] loss = 0.72095, acc = 0.71245
+[ Valid | 010/010 ] loss = 0.76012, acc = 0.72012 -> best
+Best model found at epoch 10, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune_quant.ckpt
+Finish training
+n_epochs: 10, patience:15, device: cuda, loss_fn_type: KD
+optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0003
+    lr: 0.0003
+    maximize: False
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.StepLR object at 0x79caa15a1600>
+[ Train | 001/010 ] loss = 0.76706, acc = 0.69420
+[ Valid | 001/010 ] loss = 0.81114, acc = 0.71283
+[ Train | 002/010 ] loss = 0.75359, acc = 0.70180
+[ Valid | 002/010 ] loss = 0.79598, acc = 0.71195
+[ Train | 003/010 ] loss = 0.75327, acc = 0.70201
+[ Valid | 003/010 ] loss = 0.75600, acc = 0.71166
+[ Train | 004/010 ] loss = 0.75068, acc = 0.70555
+[ Valid | 004/010 ] loss = 0.76272, acc = 0.70845
+[ Train | 005/010 ] loss = 0.75416, acc = 0.70434
+[ Valid | 005/010 ] loss = 0.81700, acc = 0.69329
+[ Train | 006/010 ] loss = 0.71331, acc = 0.71893
+[ Valid | 006/010 ] loss = 0.76973, acc = 0.71224
+[ Train | 007/010 ] loss = 0.71254, acc = 0.71376
+[ Valid | 007/010 ] loss = 0.78911, acc = 0.70350
+[ Train | 008/010 ] loss = 0.70919, acc = 0.72106
+[ Valid | 008/010 ] loss = 0.75313, acc = 0.72041 -> best
+Best model found at epoch 8, saving model to /content/drive/MyDrive/medium_baseline_p/student_best_prune_quant.ckpt
+[ Train | 009/010 ] loss = 0.70757, acc = 0.72248
+[ Valid | 009/010 ] loss = 0.77733, acc = 0.70991
+[ Train | 010/010 ] loss = 0.71457, acc = 0.71660
+[ Valid | 010/010 ] loss = 0.76063, acc = 0.71808
+Finish training
